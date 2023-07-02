@@ -1,0 +1,83 @@
+{
+    "name": "spark ダ ᴍᴜsɪᴄ",
+    "description": "سورس سبارك",
+    "logo": "https://graph.org/file/2577f47589c4b4c63e4a6.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "AnonX",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "الايبي ايدي",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "الايبي هاش",
+        "value": "",
+        "required": true
+      },
+      "USER_OWNER": {
+        "description": "يوزرك بدون @",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "توكن بوتك",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "حط هنا كود المونجو .",
+        "value": "mongodb+srv://bot_vambir:Al2552001@cluster0.heabj.mongodb.net/vambir_bot?retryWrites=true&w=majority",
+        "required": false
+      },
+      "MUSIC_BOT_NAME": {
+        "description": "اسم بوتك تكدر تخليه مزخرف",
+        "value": "Mina ダ ᴍᴜsɪᴄ",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ايدي المطور تكدر تضيف اكثر من ايدي",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "كود الجلسه لازم يكون بايروجرام v1",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "مفتاح الهيروكو",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "اسم تطبيق الهيروكو",
+        "value": "",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "ايدي كروب التخزين",
+        "value": "",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
